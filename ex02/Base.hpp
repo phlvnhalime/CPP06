@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:09:15 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/10/21 13:14:08 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:24:39 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 #include <cstdlib>
 #include <iostream>
 #include <typeinfo>
+#include <ctime>
 
 
 class Base {
     public:
-        virtual ~Base() = 0;
+        virtual ~Base();
 };
 
 Base* generate(void);

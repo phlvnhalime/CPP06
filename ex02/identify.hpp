@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:09:44 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/10/21 13:11:39 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:06:25 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define IDENTIFY_HPP
 
 #include "Base.hpp"
+#include <exception>
+#include <iostream>
 
 class A : public Base {
     public:
