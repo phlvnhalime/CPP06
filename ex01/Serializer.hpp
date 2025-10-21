@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:21:11 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/10/14 15:48:21 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:52:27 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define SERIALIZER_HPP
 
 #include <iostream>
-#include <cstdint>
+#include <cstdint> // C standart library for integer types
 
 struct Data
 {
