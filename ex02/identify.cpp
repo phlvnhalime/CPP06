@@ -6,7 +6,7 @@
 /*   By: hpehliva <hpehliva@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:42:21 by hpehliva          #+#    #+#             */
-/*   Updated: 2025/10/21 14:22:27 by hpehliva         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:26:38 by hpehliva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void identify(Base& p)
     }
     catch(const std::exception& e)
     {
+        std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
     }
     try{
         B& b = dynamic_cast<B&>(p);
@@ -69,6 +70,7 @@ void identify(Base& p)
     }
     catch(const std::exception& e)
     {
+        std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
     }
     try{
         C& c = dynamic_cast<C&>(p);
