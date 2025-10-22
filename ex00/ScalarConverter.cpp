@@ -14,16 +14,15 @@
 #include <cstdlib>
 #include <climits>
 
-ScalarConverter::ScalarConverter(const std::string& str): str(str){
+ScalarConverter::ScalarConverter(){
 }
 ScalarConverter::~ScalarConverter(){
 }
-ScalarConverter::ScalarConverter(const ScalarConverter& copy): str(copy.str){
+ScalarConverter::ScalarConverter(const ScalarConverter& copy){
+    (void)copy;
 }
 ScalarConverter& ScalarConverter::operator=(const ScalarConverter& copy){
-    if(this != &copy){
-        str = copy.str;
-    }
+    (void)copy;
     return *this;
 }
 void ScalarConverter::convert(const std::string& str){

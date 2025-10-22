@@ -60,7 +60,7 @@ void identify(Base& p)
     }
     catch(const std::exception& e)
     {
-        std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
+        // std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
     }
     try{
         B& b = dynamic_cast<B&>(p);
@@ -70,7 +70,7 @@ void identify(Base& p)
     }
     catch(const std::exception& e)
     {
-        std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
+        // std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
     }
     try{
         C& c = dynamic_cast<C&>(p);
@@ -80,6 +80,8 @@ void identify(Base& p)
     }
     catch(const std::exception& e)
     {
-        std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
+        // std::cout << "\033[30m" << "Object pointed by p is not a Base" << "\033[0m" << std::endl;
     }
+    // If we reach here, none of the casts succeeded
+    std::cout << "\033[30m" << "Object is not A, B, or C" << "\033[0m" << std::endl;
 }

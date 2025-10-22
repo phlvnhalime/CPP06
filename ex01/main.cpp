@@ -12,8 +12,13 @@
 
 #include "Serializer.hpp"
 
-int main()
+int main(int ac, char **av)
 {
+    if(ac != 1 || av[1])
+    {
+        std::cout << "\033[31m" << "Usage: ./serializer" << "\033[0m" << std::endl;
+        return 1;
+    }
     Data* data = new Data;
     data->value = 42;
     

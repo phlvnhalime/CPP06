@@ -20,7 +20,6 @@ Base::~Base()
 
 Base* generate(void)
 {
-    srand(time(NULL));
     int choose = rand() % 3;
 
     switch (choose) {

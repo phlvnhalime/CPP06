@@ -18,13 +18,11 @@
 
 class ScalarConverter {
     private:
-        std::string str;
-    public:
-        ScalarConverter(const std::string& str);
+        ScalarConverter();
         ~ScalarConverter();
         ScalarConverter(const ScalarConverter& copy);
         ScalarConverter& operator=(const ScalarConverter& copy);
-
+    public:
         // Converter
         static void convert(const std::string& str);
         // Print functions
